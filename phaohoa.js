@@ -104,7 +104,7 @@ Firework.prototype.draw = function () {
     ctx.stroke();
 };
 
-// create particle
+
 function Particle(x, y) {
     this.x = x;
     this.y = y;
@@ -161,7 +161,7 @@ function createParticles(x, y) {
     }
 }
 
-// main demo loop
+
 function loop() {
     requestAnimFrame(loop);
 
@@ -206,13 +206,7 @@ function loop() {
 }
 var ctxt = canvas.getContext("2d");
 ctx.font = "30px Verdana";
-// Create gradient
-var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-gradient.addColorStop("0", " magenta");
-gradient.addColorStop("0.5", "blue");
-gradient.addColorStop("1.0", "red");
-ctx.fillStyle = gradient;
-ctx.fillText("Big smile!", 10, 90);
+
 canvas.addEventListener("mousemove", function (e) {
     mx = e.pageX - canvas.offsetLeft;
     my = e.pageY - canvas.offsetTop;
