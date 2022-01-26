@@ -1,0 +1,14 @@
+body {
+	background: #000;
+	/* margin: 0; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+	color: white	;
+}
+canvas {
+	cursor: crosshair;
+	display: block;
+}
